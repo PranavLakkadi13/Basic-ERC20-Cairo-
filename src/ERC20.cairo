@@ -105,8 +105,7 @@ mod cairo_token{
         self.allowances.write((sender, caller), self.allowances.read((sender, caller)) - amount);
         self._transfer(sender, to, amount);
     }
-
-    //Merko nahi malum kyaa hai ki yeh    
+  
     #[generate_trait]
     impl PrivateFunctions of CairoTokenPrivateFunctionsTrait {
 
